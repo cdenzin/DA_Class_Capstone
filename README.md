@@ -1,6 +1,7 @@
 # Solar Energy Market Growth
 
 Introduction
+
     In this project, I set out to look at energy data to
     determine solar energy's market growth and outlook.
     The data I used came from the US Energy Information
@@ -8,6 +9,7 @@ Introduction
     here (https://www.eia.gov).
 
 SQL
+
     Here is my syntax for loading the data sets into SQL.
     For my queries, I used these functions:
         SELECT
@@ -25,6 +27,7 @@ SQL
     have gained generators.
 
 Tableau
+
     You can view my Tableu dashboards here.
 
     I included information on primary energy consumption as well
@@ -34,6 +37,7 @@ Tableau
     is a solar generation map on the state level.
 
 Excel
+
     I created a pivot table using the solar generation by state 
     where you can filter by state and year to see the states solar
     generation. You can view the file here.
