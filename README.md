@@ -10,15 +10,41 @@ Introduction
 
 SQL
 
-    For my queries, I used these functions:
-        SELECT
-        FROM 
-        ORDER BY
-        JOIN
-        WHEN
-        WHERE
-        THEN
-        AVG
+    Here are my SQL queries:
+    SELECT *
+    FROM da_energy.solargenbystate
+    ORDER BY generation_from_all_sectors DESC
+
+    SELECT state, generation_from_all_sectors
+    FROM da_energy.solargenbystate
+    WHERE year = '2017-01-01' AND generation_from_all_sectors < 100
+    ORDER BY generation_from_all_sectors DESC
+
+    SELECT state, generation_from_all_sectors
+    FROM da_energy.solargenbystate
+    WHERE year = '2017-01-01' AND generation_from_all_sectors = 0
+    ORDER BY generation_from_all_sectors DESC
+
+    SELECT c.energy_source, number_of_generators, total_capacity, net_number_of_generators
+    FROM da_energy.capacity c
+    JOIN da_energy.plannedgencap  p
+    ON c.energy_source = p.energy_source
+    ORDER BY net_number_of_generators
+
+    SELECT c.energy_source, number_of_generators, total_capacity, net_number_of_generators,
+    CASE
+	    WHEN net_number_of_generators <= 0 THEN 'NEGATIVE'
+	    WHEN net_number_of_generators > 0 THEN 'POSITIVE'
+	    ELSE 'NULL'
+	    END AS net_change
+    FROM da_energy.capacity c
+    JOIN da_energy.plannedgencap  p
+    ON c.energy_source = p.energy_source
+    ORDER BY net_number_of_generators
+
+    SELECT AVG(generation_from_all_sectors)
+    FROM da_energy.solargenbystate
+        
     For these queries, I looked at state level solar data to
     determine what states generated the most solar energy and also
     looked at energy generators from all energy sources to 
