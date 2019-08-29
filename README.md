@@ -22,7 +22,7 @@ SQL
     determine what states generated the most solar energy and also
     looked at energy generators from all energy sources to 
     determine which energy sources were losing generators and which
-    have gain generators.
+    have gained generators.
 
 Tableau
     You can view my Tableu dashboards here.
