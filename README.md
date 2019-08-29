@@ -10,7 +10,6 @@ Introduction
 
 SQL
 
-    Here is my syntax for loading the data sets into SQL.
     For my queries, I used these functions:
         SELECT
         FROM 
@@ -28,7 +27,7 @@ SQL
 
 Tableau
 
-    You can view my Tableu dashboards here.
+    You can view my Tableu dashboards here (https://public.tableau.com/profile/collin.denzin#!/vizhome/DAClassCapstone/PrimaryEnergyMarketOverview?publish=yes).
 
     I included information on primary energy consumption as well
     as their compounded growth rates. I did the same for renewable
@@ -40,4 +39,4 @@ Excel
 
     I created a pivot table using the solar generation by state 
     where you can filter by state and year to see the states solar
-    generation. You can view the file here.
+    generation.
